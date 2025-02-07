@@ -5,36 +5,35 @@
 }
 
 #cta {
-width: 35%;
-display: flex;
-flex-direction: column;
-gap: 28px;
-margin-top: 5%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
 }
 
 #cta .title {
     font-size: 4rem;
-    color: #1d1d1d;
+    color: var(--color-neutral-1);;
 }
 
-#cta .title span{
+#cta .title span {
     font-size: 4rem;
     color:  #e94109;
 }
 
-#cta .descriptioin {
+#cta .description {
     font-size: 1.2rem;
 }
 
 #cta_buttons {
     display: flex;
     gap: 24px;
-    
 }
 
 #cta_buttons a {
-      text-decoration: none;
-      color: #1d1d1d;
+    text-decoration: none;
+    color: var(--color-neutral-1);;
 }
 
 #phone_button {
@@ -52,25 +51,21 @@ margin-top: 5%;
     box-shadow: none;
 }
 
-#cta_buttons .btn-default {
- color: #ffffff;
-}
-
 #banner {
     display: flex;
     align-items: start;
     justify-content: end;
     width: 70%;
+    z-index: 2;
 }
 
 #banner img {
     height: 100%;
     width: fit-content;
-    z-index: 2;
 }
 
 .shape {
-    background-color: #ffe8b4;
+    background-color: var(--color-primary-2);
     width: 50%;
     height: 100%;
     position: absolute;
@@ -84,10 +79,9 @@ margin-top: 5%;
     #home {
         min-height: 100%;
         padding-top: 0px;
-
     }
 
-    #banner, 
+    #banner,
     #banner img,
     #home .shape {
         display: none;
@@ -95,13 +89,13 @@ margin-top: 5%;
 
     #cta {
         width: 100%;
-        align-items: center;
         text-align: center;
+        align-items: center;
     }
 }
 
-@media screen and (max-width: 350px) {
-      #phone_button button {
+@media screen and (max-width: 450px) {
+    #phone_button button {
         display: none;
-      }
+    }
 }

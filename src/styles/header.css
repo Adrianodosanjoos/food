@@ -1,6 +1,10 @@
 header {
     width: 100%;
     padding: 28px 8%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary-1);
+    z-index: 3;
 }
 
 #navbar {
@@ -34,7 +38,6 @@ header {
 
 #mobile_btn {
     display: none;
-
 }
 
 #mobile_menu {
@@ -42,7 +45,6 @@ header {
 }
 
 @media screen and (max-width: 1170px) {
-     
     #nav_list,
     #navbar .btn-default {
         display: none;
@@ -72,5 +74,5 @@ header {
     #mobile_nav_list .nav-item {
         list-style: none;
         text-align: center;
-    }
+    } 
 }
